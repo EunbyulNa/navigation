@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Navigation 1</title>
+    <style media="screen">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+         font-family: Tahoma;
+         color: gray;
+
+       }
+
+      li {
+        list-style: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+      }
+
+     ul {
+       border: 1px solid black;
+       margin-bottom: 50px;
+       background-color: #eee;
+     }
+
+     .current {
+       background-color: pink;
+       color: white;
+       font-weight: bold;
+
+     }
+     li {
+
+     }
+
+     ul.ex1 {
+       width: 250px;
+     }
+
+     .ex1 a {
+       padding: 15px;
+       border-bottom: 1px solid gray;
+     }
+
+     .ex1 a:hover {
+       background-color: #333;
+       color: white;
+     }
+
+     .ex1 li:last-child a {
+       border-bottom: none;
+     }
+
+
+     ul.hor_ex {
+      overflow: hidden;
+      width: 700px;
+     }
+
+     ul.hor_ex li {
+       float:left;
+     }
+
+     ul.hor_ex li a {
+       padding: 20px 25px;
+     }
+
+     .hor_ex li:last-child {
+       float:right;
+     }
+
+     .ex2 {
+       background-color: #333;
+       color: white;
+     }
+
+     .ex2 li:hover {
+       background-color: pink;
+
+     }
+
+     .ex3 {
+       background-color:#777;
+       color: white;
+     }
+
+     .ex3 a:hover {
+       background-color: #444;
+     }
+
+     .ex3 li:nth-child(3) a{
+       background-color: #000;
+       font-weight: bold !important;
+     }
+
+    </style>
+  </head>
+  <body>
+  <h1>Navigation 연습</h1>
+  <h2>연습 1</h2>
+  <ul class="ex1">
+    <li class="current"><a href="#">HOME</a></li>
+    <li><a href="#">NEWS</a></li>
+    <li><a href="#">Q&A</a></li>
+    <li><a href="#">CONTACT</a></li>
+  </ul>
+
+
+  <h2>연습 2</h2>
+  <ul class="ex2 hor_ex">
+    <li class="current"><a href="#">HOME</a></li>
+    <li><a href="#">NEWS</a></li>
+    <li><a href="#">Q&A</a></li>
+    <li><a href="#">CONTACT</a></li>
+  </ul>
+
+
+
+  <h2>연습 3</h2>
+  <ul class="ex3 hor_ex">
+    <li><a href="#">HOME</a></li>
+    <li><a href="#">NEWS</a></li>
+    <li><a href="#">Q&A</a></li>
+    <li><a href="#">CONTACT</a></li>
+  </ul>
+
+
+
+
+
+  </body>
+</html>
